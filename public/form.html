@@ -1,101 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evaluación de Conocimiento Ecológico</title>
-    <link rel="stylesheet" href="/src/output.css">
-</head>
-<body class="bg-green-50 flex items-center justify-center h-screen" >
-    <div class="w-full max-w-lg bg-white shadow-md rounded px-8 pt-6 pb-8 mb-6" >
-        <h1 class="text-2xl font-bold mb-6 text-center text-green-700">Evaluación de Conocimiento Ecológico</h1>
-        <form action="https://formspree.io/f/mbjneldn" method="POST">
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2 " for="name"> <br>
-                    Nombre
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" placeholder="Tu nombre" required>
-            </div>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body class="bg-green-50 flex items-center justify-center h-screen">
+    <div class="w-full max-w-lg bg-white shadow-md rounded px-8 pt-6 pb-8 mb-6">
+      <h1 class="text-2xl font-bold mb-6 text-center text-green-700">
+        Evaluación de Conocimiento Ecológico
+      </h1>
+      <form action="https://formspree.io/f/mbjneldn" method="POST">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+            <br />
+            Nombre
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Tu nombre"
+            required
+          />
+        </div>
 
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-                    Correo Electrónico
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" type="email" placeholder="Tu correo electrónico" required>
-            </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+            Correo Electrónico
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Tu correo electrónico"
+            required
+          />
+        </div>
 
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2">
-                    1. ¿Cuál de los siguientes gases es un gas de efecto invernadero?
-                </label>
-                <div class="block">
-                    <label class="inline-flex items-center">
-                        <input class="form-radio text-green-500" type="radio" name="question1" value="CO2" required>
-                        <span class="ml-2">Dióxido de Carbono (CO2)</span>
-                    </label>
-                </div>
-                <div class="block">
-                    <label class="inline-flex items-center">
-                        <input class="form-radio text-green-500" type="radio" name="question1" value="O2" required>
-                        <span class="ml-2">Oxígeno (O2)</span>
-                    </label>
-                </div>
-                <div class="block">
-                    <label class="inline-flex items-center">
-                        <input class="form-radio text-green-500" type="radio" name="question1" value="N2" required>
-                        <span class="ml-2">Nitrógeno (N2)</span>
-                    </label>
-                </div>
-            </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2">
+            1. ¿Cuál de los siguientes gases es un gas de efecto invernadero?
+          </label>
+          <div class="block">
+            <label class="inline-flex items-center">
+              <input
+                class="form-radio text-green-500"
+                type="radio"
+                name="question1"
+                value="CO2"
+                required
+              />
+              <span class="ml-2">Dióxido de Carbono (CO2)</span>
+            </label>
+          </div>
+          <div class="block">
+            <label class="inline-flex items-center">
+              <input
+                class="form-radio text-green-500"
+                type="radio"
+                name="question1"
+                value="O2"
+                required
+              />
+              <span class="ml-2">Oxígeno (O2)</span>
+            </label>
+          </div>
+          <div class="block">
+            <label class="inline-flex items-center">
+              <input
+                class="form-radio text-green-500"
+                type="radio"
+                name="question1"
+                value="N2"
+                required
+              />
+              <span class="ml-2">Nitrógeno (N2)</span>
+            </label>
+          </div>
+        </div>
 
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2">
-                    2. ¿Qué es la biodiversidad?
-                </label>
-                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="question2" rows="4" placeholder="Tu respuesta" required></textarea>
-            </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2">
+            2. ¿Qué es la biodiversidad?
+          </label>
+          <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            name="question2"
+            rows="4"
+            placeholder="Tu respuesta"
+            required
+          ></textarea>
+        </div>
 
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2">
-                    3. ¿Cuál es la principal causa del cambio climático?
-                </label>
-                <div class="block">
-                    <label class="inline-flex items-center">
-                        <input class="form-radio text-green-500" type="radio" name="question3" value="deforestation" required>
-                        <span class="ml-2">Deforestación</span>
-                    </label>
-                </div>
-                <div class="block">
-                    <label class="inline-flex items-center">
-                        <input class="form-radio text-green-500" type="radio" name="question3" value="fossilFuels" required>
-                        <span class="ml-2">Uso de combustibles fósiles</span>
-                    </label>
-                </div>
-                <div class="block">
-                    <label class="inline-flex items-center">
-                        <input class="form-radio text-green-500" type="radio" name="question3" value="recycling" required>
-                        <span class="ml-2">Falta de reciclaje</span>
-                    </label>
-                </div>
-            </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2">
+            3. ¿Cuál es la principal causa del cambio climático?
+          </label>
+          <div class="block">
+            <label class="inline-flex items-center">
+              <input
+                class="form-radio text-green-500"
+                type="radio"
+                name="question3"
+                value="deforestation"
+                required
+              />
+              <span class="ml-2">Deforestación</span>
+            </label>
+          </div>
+          <div class="block">
+            <label class="inline-flex items-center">
+              <input
+                class="form-radio text-green-500"
+                type="radio"
+                name="question3"
+                value="fossilFuels"
+                required
+              />
+              <span class="ml-2">Uso de combustibles fósiles</span>
+            </label>
+          </div>
+          <div class="block">
+            <label class="inline-flex items-center">
+              <input
+                class="form-radio text-green-500"
+                type="radio"
+                name="question3"
+                value="recycling"
+                required
+              />
+              <span class="ml-2">Falta de reciclaje</span>
+            </label>
+          </div>
+        </div>
 
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2">
-                    4. Describe una acción diaria que tomes para reducir tu huella de carbono.
-                </label>
-                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="question4" rows="4" placeholder="Tu respuesta" required></textarea>
-            </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2">
+            4. Describe una acción diaria que tomes para reducir tu huella de
+            carbono.
+          </label>
+          <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            name="question4"
+            rows="4"
+            placeholder="Tu respuesta"
+            required
+          ></textarea>
+        </div>
 
-            <div class="flex items-center justify-between">
-                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                    Enviar
-                </button>
-                <a href="./separar-basura.html" class="inline-block align-baseline font-bold text-sm text-green-500 hover:text-green-800">
-                    Regresar a la página de inicio
-                </a>
-            </div>
-        </form>
+        <div class="flex items-center justify-between">
+          <button
+            class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+          >
+            Enviar
+          </button>
+          <a
+            href="./home.html"
+            class="inline-block align-baseline font-bold text-sm text-green-500 hover:text-green-800"
+          >
+            Regresar a la página de inicio
+          </a>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
-

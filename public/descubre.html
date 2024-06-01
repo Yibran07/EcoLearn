@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/output.css">
+  <script src="../src/menu.js"></script>
   <title>Descubre</title>
 </head>
 <body>
@@ -13,12 +14,11 @@
         <div class="flex lg:flex-1 items-center">
           <a href="./home.html" class="-m-1.5 p-1.5">
             <img class=" h-12 w-12" src="/Image/ecolearn.png" alt="">
-
           </a>
           <h1 class="ml-2m font-sans">EcoLearn</h1>
         </div>
         <div class="flex lg:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <button id="menu-button" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
             <span class="sr-only">Open main menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -28,7 +28,7 @@
         <div class="hidden lg:flex lg:gap-x-12">
           <a href="./home.html" class="text-sm font-sans leading-6 text-gray-900">HOME</a>
           <a href="./contacto.html" class="text-sm font-sans leading-6 text-gray-900">CONTACTO</a>
-          <a href="#" class="text-sm font-sans font-bold leading-6 text-black" >DESCUBRE</a>
+          <a href="./descubre.html" class="text-sm font-sans font-bold leading-6 text-black">DESCUBRE</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-6 items-center">
           <a href="./form.html" class="text-sm font-semibold leading-6 text-green-700 p-3 rounded-lg w-24 text-center">Form</a>
@@ -36,7 +36,7 @@
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
-      <div class="lg:hidden" role="dialog" aria-modal="true">
+      <div id="mobile-menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
         <div class="fixed inset-0 z-50"></div>
         <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -45,7 +45,7 @@
               <img class="h-12 w-12" src="/Image/ecolearn.png" alt="">
             </a>
             <h1 class="text-black">EcoLearn</h1>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <button id="close-menu-button" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
               <span class="sr-only">Close menu</span>
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -56,12 +56,12 @@
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
                 <a href="./separar-basura.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">HOME</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">CONTACTO</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">DESCUBRE</a>
+                <a href="./contacto.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">CONTACTO</a>
+                <a href="./descubre.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">DESCUBRE</a>
               </div>
               <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Form</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Donar</a>
+                <a href="./form.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Form</a>
+                <a href="./donar.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Donar</a>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
         <div class="bg-white p-4 m-4 w-full">
             <div class="flex justify-center items-center h-full"> <!-- Centrar contenido en bloque -->
                 <div class="text-center">
-                    <img src="../Image/Descubre1R.png" class=" w-full h-64 text-green-600" alt="">
+                    <img src="../Image/separacion.jpg" class=" w-full h-64 text-green-600" alt="">
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
                     <ul class="text-3xl">
                         <li class="text-green-600">Separacion de basura</li>
                         <li class="my-6 ">La separación de basura es crucial para la gestión sostenible de residuos y la protección del medio ambiente. Al separar los desechos orgánicos, reciclables y no reciclables, se facilita el reciclaje y la reutilización de materiales, reduciendo la cantidad de residuos que terminan en vertederos ... </li>
-                        <li class=" "> <a href="./separar_basura.html" class="text-sm font-semibold leading-6 text-white bg-green-700 p-2 rounded-lg w-24 text-center">Learn More</a></li>
+                        <li class=" "> <a href="./separar_basura.html" class="text-sm font-semibold leading-6 text-white bg-green-700 p-2 rounded-lg w-24 text-center">Saber más</a></li>
                     </ul>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         <li class="text-green-600">Reciclaje</li>
                         <li class="my-6">El reciclaje es esencial para la conservación de recursos naturales y la reducción de la contaminación. Al transformar materiales desechados en nuevos productos, se disminuye la necesidad de extraer y procesar materias primas, lo cual ahorra energía y reduce las emisiones de gases de efecto invernadero... 
                           </li>
-                        <li class=" "> <a href="./reciclaje.html" class="text-sm font-semibold leading-6 text-white bg-green-700 p-2 rounded-lg w-24 text-center">Learn More</a></li>
+                        <li class=" "> <a href="./reciclaje.html" class="text-sm font-semibold leading-6 text-white bg-green-700 p-2 rounded-lg w-24 text-center">Saber más</a></li>
                     </ul>
                 </div>
             </div>
@@ -116,7 +116,7 @@
         <div class="ml-4 bg-white p-8 m-4 w-full">
           <div class="flex justify-center items-center h-full"> <!-- Centrar contenido en bloque -->
               <div class="text-center">
-                  <img src="../Image/descubre2.png" class=" w-full h-64 text-green-600" alt="">
+                  <img src="../Image/reciclaje.jpg" class=" w-full h-64 text-green-600" alt="">
               </div>
           </div>
       </div>
@@ -131,7 +131,7 @@
         <div class="bg-white p-4 m-4 w-full">
             <div class="flex justify-center items-center h-full"> <!-- Centrar contenido en bloque -->
                 <div class="text-center">
-                    <img src="../Image/Descubre1R.png" class=" w-full h-64 text-green-600" alt="">
+                    <img src="../Image/compostaje.jpg" class=" w-full h-64 text-green-600" alt="">
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@
                         <li class="text-green-600">Compostaje</li>
                         <li class="my-6">El compostaje es un proceso natural que transforma los desechos orgánicos en compost, un abono rico en nutrientes. Es importante porque reduce la cantidad de residuos orgánicos que terminan en vertederos, 
                           disminuyendo así las emisiones de metano, un potente gas de efecto invernadero... </li>
-                        <li class=" "> <a href="./compostaje.html" class="text-sm font-semibold leading-6 text-white bg-green-700 p-2 rounded-lg w-24 text-center">Learn More</a></li>
+                        <li class=" "> <a href="./compostaje.html" class="text-sm font-semibold leading-6 text-white bg-green-700 p-2 rounded-lg w-24 text-center">Saber más</a></li>
                     </ul>
                 </div>
             </div>
@@ -163,7 +163,7 @@
                         <li class="text-green-600">Manejo de residuos</li>
                         <li class="my-6 text-justify">El manejo de residuos es esencial para proteger la salud pública y el medio ambiente. Incluye la recolección, transporte, tratamiento y disposición de desechos, así como la reducción, reutilización y reciclaje de materiales. Una gestión adecuada de residuos reduce la contaminación del suelo, agua y aire, previniendo problemas de salud y daños ecológicos. 
                           También ayuda a conservar recursos naturales y energía, fomentando prácticas...</li>
-                        <li class=" "> <a href="./manejo_residuos.html" class="text-sm font-semibold leading-6 text-white bg-green-700 p-2 rounded-lg w-24 text-center">Learn More</a></li>
+                        <li class=" "> <a href="./manejo_residuos.html" class="text-sm font-semibold leading-6 text-white bg-green-700 p-2 rounded-lg w-24 text-center">Saber más</a></li>
                     </ul>
                 </div>
             </div>
@@ -173,7 +173,7 @@
         <div class="ml-4 bg-white p-8 m-4 w-full">
           <div class="flex justify-center items-center h-full"> <!-- Centrar contenido en bloque -->
               <div class="text-center">
-                  <img src="../Image/descubre2.png" class=" w-full h-64 text-green-600" alt="">
+                  <img src="../Image/residuos.jpg" class=" w-full h-64 text-green-600" alt="">
               </div>
           </div>
       </div>

@@ -10,58 +10,140 @@
   <body>
     <div class="bg-white">
       <header class="relative inset-x-0 top-0 z-50">
-        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav
+          class="flex items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
           <div class="flex lg:flex-1 items-center">
             <a href="./home.html" class="-m-1.5 p-1.5">
-              <img class=" h-12 w-12" src="/Image/ecolearn.png" alt="">
+              <img class="h-12 w-12" src="/Image/ecolearn.png" alt="" />
             </a>
             <h1 class="ml-2m font-sans">EcoLearn</h1>
           </div>
           <div class="flex lg:hidden">
-            <button id="menu-button" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <button
+              id="menu-button"
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
               <span class="sr-only">Open main menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
               </svg>
             </button>
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
-            <a href="./home.html" class="text-sm font-sans leading-6 text-gray-900">HOME</a>
-            <a href="./contacto.html" class="text-sm font-sans leading-6 text-gray-900">CONTACTO</a>
-            <a href="./descubre.html" class="text-sm font-sans font-bold leading-6 text-black">DESCUBRE</a>
+            <a
+              href="./home.html"
+              class="text-sm font-sans leading-6 text-gray-900"
+              >HOME</a
+            >
+            <a
+              href="./contacto.html"
+              class="text-sm font-sans leading-6 text-gray-900"
+              >CONTACTO</a
+            >
+            <a
+              href="./descubre.html"
+              class="text-sm font-sans font-bold leading-6 text-black"
+              >DESCUBRE</a
+            >
           </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-6 items-center">
-            <a href="./form.html" class="text-sm font-semibold leading-6 text-green-700 p-3 rounded-lg w-24 text-center">Form</a>
-            <a href="./donar.html" class="text-sm font-semibold leading-6 text-white bg-green-700 p-2 rounded-lg w-24 text-center">Donar</a>
+          <div
+            class="hidden lg:flex lg:flex-1 lg:justify-end gap-6 items-center"
+          >
+            <a
+              href="./form.html"
+              class="text-sm font-semibold leading-6 text-green-700 p-3 rounded-lg w-24 text-center"
+              >Form</a
+            >
+            <a
+              href="./donar.html"
+              class="text-sm font-semibold leading-6 text-white bg-green-700 p-2 rounded-lg w-24 text-center"
+              >Donar</a
+            >
           </div>
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
-        <div id="mobile-menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
+        <div
+          id="mobile-menu"
+          class="lg:hidden hidden"
+          role="dialog"
+          aria-modal="true"
+        >
           <!-- Background backdrop, show/hide based on slide-over state. -->
           <div class="fixed inset-0 z-50"></div>
-          <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          >
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
-                <img class="h-12 w-12" src="/Image/ecolearn.png" alt="">
+                <img class="h-12 w-12" src="/Image/ecolearn.png" alt="" />
               </a>
               <h1 class="text-black">EcoLearn</h1>
-              <button id="close-menu-button" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <button
+                id="close-menu-button"
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700"
+              >
                 <span class="sr-only">Close menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
             </div>
             <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
-                  <a href="./separar-basura.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">HOME</a>
-                  <a href="./contacto.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">CONTACTO</a>
-                  <a href="./descubre.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">DESCUBRE</a>
+                  <a
+                    href="./separar-basura.html"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >HOME</a
+                  >
+                  <a
+                    href="./contacto.html"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >CONTACTO</a
+                  >
+                  <a
+                    href="./descubre.html"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >DESCUBRE</a
+                  >
                 </div>
                 <div class="py-6">
-                  <a href="./form.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Form</a>
-                  <a href="./donar.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Donar</a>
+                  <a
+                    href="./form.html"
+                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Form</a
+                  >
+                  <a
+                    href="./donar.html"
+                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Donar</a
+                  >
                 </div>
               </div>
             </div>
@@ -69,43 +151,71 @@
         </div>
       </header>
 
-       <section class="flex justify-center items-center h-1/2 text-center">
-      <div class="flex justify-start items-center gap-52">
-        <!-- Primer bloque -->
-        <div class="bg-white p-4 m-4 w-full">
-            <div class="flex justify-center items-center h-full"> <!-- Centrar contenido en bloque -->
-                <div class="text-center">
-                    <img src="../Image/compostaje.jpg" class=" w-full h-full text-green-600" alt="">
-                </div>
+      <section class="flex justify-center items-center h-1/2 text-center">
+        <div class="flex justify-start items-center gap-52">
+          <!-- Primer bloque -->
+          <div class="bg-white p-4 m-4 w-full">
+            <div class="flex justify-center items-center h-full">
+              <!-- Centrar contenido en bloque -->
+              <div class="text-center">
+                <img
+                  src="../Image/compostaje.jpg"
+                  class="w-full h-full text-green-600"
+                  alt=""
+                />
+              </div>
             </div>
-        </div>
-        <!-- Segundo bloque -->
-        <div class="bg-white p-4">
-            <div class="flex justify-start items-center h-full"> <!-- Centrar contenido en bloque -->
-                <div class="text-start justify-start">
-                    <ul class="text-3xl">
-                        <li class="text-green-600">Compostaje</li>
-                        <li class="my-6"> El compostaje es un proceso natural que transforma los desechos orgánicos en compost, un abono rico en nutrientes. Es importante porque reduce la cantidad de residuos orgánicos que terminan en vertederos, disminuyendo así las emisiones de metano, un potente gas de efecto invernadero. Al descomponer los restos de comida, hojas, césped y otros materiales orgánicos en condiciones controladas, se produce un material que puede enriquecer el suelo, mejorando su estructura, retención de agua y fertilidad.</li>
-                        <li class="my-6">El compostaje no solo contribuye a la reducción de residuos y a la mitigación del cambio climático, sino que también cierra el ciclo de los nutrientes, devolviendo al suelo los elementos esenciales para el crecimiento de las plantas. Esto reduce la dependencia de fertilizantes químicos, que pueden contaminar los cuerpos de agua y afectar negativamente la vida acuática y la salud humana.
- </li>
-                        <li class="my-6"> 
-                            Además, el compostaje promueve la biodiversidad del suelo al fomentar la presencia de microorganismos beneficiosos que descomponen la materia orgánica y mejoran la salud del ecosistema del suelo. Un suelo bien gestionado con compost puede aumentar su capacidad para secuestrar carbono, contribuyendo aún más a la lucha contra el cambio climático.
-                        </li>
-                    </ul>
-                </div>
+          </div>
+          <!-- Segundo bloque -->
+          <div class="bg-white p-4">
+            <div class="flex justify-start items-center h-full">
+              <!-- Centrar contenido en bloque -->
+              <div class="text-start justify-start">
+                <ul class="text-3xl">
+                  <li class="text-green-600">Compostaje</li>
+                  <li class="my-6">
+                    El compostaje es un proceso natural que transforma los
+                    desechos orgánicos en compost, un abono rico en nutrientes.
+                    Es importante porque reduce la cantidad de residuos
+                    orgánicos que terminan en vertederos, disminuyendo así las
+                    emisiones de metano, un potente gas de efecto invernadero.
+                    Al descomponer los restos de comida, hojas, césped y otros
+                    materiales orgánicos en condiciones controladas, se produce
+                    un material que puede enriquecer el suelo, mejorando su
+                    estructura, retención de agua y fertilidad.
+                  </li>
+                  <li class="my-6">
+                    El compostaje no solo contribuye a la reducción de residuos
+                    y a la mitigación del cambio climático, sino que también
+                    cierra el ciclo de los nutrientes, devolviendo al suelo los
+                    elementos esenciales para el crecimiento de las plantas.
+                    Esto reduce la dependencia de fertilizantes químicos, que
+                    pueden contaminar los cuerpos de agua y afectar
+                    negativamente la vida acuática y la salud humana.
+                  </li>
+                  <li class="my-6">
+                    Además, el compostaje promueve la biodiversidad del suelo al
+                    fomentar la presencia de microorganismos beneficiosos que
+                    descomponen la materia orgánica y mejoran la salud del
+                    ecosistema del suelo. Un suelo bien gestionado con compost
+                    puede aumentar su capacidad para secuestrar carbono,
+                    contribuyendo aún más a la lucha contra el cambio climático.
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="flex justify-center items-center h-1/2 text-center">
+      <section class="flex justify-center items-center h-1/2 text-center">
         <div>
           <video width="640" height="360" controls>
-            <source src="../Video/Video1.mp4" type="video/mp4">
+            <source src="../Video/compostaje.mp4" type="video/mp4" />
             No se pudo reproducir.
-        </video>
+          </video>
         </div>
-    </section>
+      </section>
 
       <>
     </div>
